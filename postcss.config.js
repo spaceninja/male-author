@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === 'production') {
   module.exports = {
-    plugins: [require("autoprefixer"), require("cssnano")]
+    plugins: [require('autoprefixer'), require('cssnano')],
   };
 }
