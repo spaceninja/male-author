@@ -7,7 +7,7 @@ const simile = sample(vocabulary.simile);
 const intransitive = sample(vocabulary.intransitive);
 const verb = sample(vocabulary.verb);
 
-const sentence = `She had ${bodyPart} like a ${adjective} ${simile} and I ${intransitive} to ${verb} her.`;
+const sentence = `“She had ${bodyPart} like a ${adjective} ${simile} and I ${intransitive} to ${verb} her.”`;
 
 const encSentence = encodeURIComponent(`${sentence} #MaleAuthorDescription`);
 const encUrl = encodeURIComponent('https://maleauthor.oscorp.net/');
