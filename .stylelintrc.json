@@ -1,0 +1,6 @@
+{
+  "extends": "stylelint-config-spaceninja",
+  "rules": {
+    "string-quotes": "single"
+  }
+}

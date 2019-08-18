@@ -1,0 +1,63 @@
+{
+  "name": "male-author-description-generator",
+  "version": "1.0.0",
+  "description": "Don’t waste time trying to figure out how to write about your boobs, let this generator do it for you.",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --config build-utils/webpack.config.js --env.env=development",
+    "build": "NODE_ENV=production webpack --config build-utils/webpack.config.js --env.env=production",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint '**/*.js'",
+    "lint:css": "stylelint '**/*.scss'",
+    "fix": "npm run fix:js && npm run fix:css",
+    "fix:js": "eslint --fix '**/*.js'",
+    "fix:css": "stylelint --fix '**/*.scss'",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaceninja/male-author.git"
+  },
+  "keywords": [],
+  "author": "Scott Vandehey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spaceninja/male-author/issues"
+  },
+  "homepage": "https://github.com/spaceninja/male-author#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.18.2",
+    "sass": "^1.22.9",
+    "sass-loader": "^7.2.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-spaceninja": "github:spaceninja/stylelint-config-spaceninja",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "webpack": "^4.39.1",
+    "webpack-bundle-analyzer": "^3.4.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1",
+    "webpack-visualizer-plugin": "^0.1.11"
+  }
+}
