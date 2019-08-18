@@ -1,10 +1,5 @@
 import vocabulary from '../data/vocabulary.json';
 import sample from 'lodash.sample';
-// import random from 'lodash.random';
-
-/* eslint-disable no-console */
-
-// console.log('RANDOM', random(0, 5));
 
 const bodyPart = sample(vocabulary.bodyPart);
 const adjective = sample(vocabulary.adjective);
@@ -13,9 +8,8 @@ const intransitive = sample(vocabulary.intransitive);
 const verb = sample(vocabulary.verb);
 
 const sentence = `She had ${bodyPart} like a ${adjective} ${simile} and I ${intransitive} to ${verb} her.`;
-console.log(sentence);
 
-const encSentence = encodeURIComponent(sentence);
+const encSentence = encodeURIComponent(`${sentence} #MaleAuthorDescription`);
 const encUrl = encodeURIComponent('http://talklikewarrenellis.com');
 
 const tweet = `https://twitter.com/intent/tweet?text=${encSentence}&url=${encUrl}`;
