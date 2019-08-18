@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config build-utils/webpack.config.js --env.env=development",
-    "build": "NODE_ENV=production webpack --config build-utils/webpack.config.js --env.env=production",
+    "build": "NODE_ENV=production webpack --config build-utils/webpack.config.js --env.env=production && cp ./src/CNAME dist/",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint '**/*.js'",
     "lint:css": "stylelint '**/*.scss'",
