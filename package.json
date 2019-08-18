@@ -61,6 +61,7 @@
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "dependencies": {
-    "lodash.sample": "^4.2.1"
+    "lodash.sample": "^4.2.1",
+    "widont": "^0.3.3"
   }
 }

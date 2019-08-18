@@ -9,7 +9,7 @@ body {
   padding: 1em;
 
   @media screen and (min-width: 480px) {
-    padding: 2em;
+    padding: 3em;
   }
 }
 
@@ -27,6 +27,7 @@ h1 {
   font-size: 2.5em;
   font-style: italic;
   font-weight: 200;
+  text-indent: -0.375em;
 
   @media screen and (min-width: 480px) {
     font-size: 4em;

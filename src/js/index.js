@@ -1,5 +1,6 @@
 import vocabulary from '../data/vocabulary.json';
 import sample from 'lodash.sample';
+import widont from 'widont';
 
 const bodyPart = sample(vocabulary.bodyPart);
 const adjective = sample(vocabulary.adjective);
@@ -15,6 +16,6 @@ const encUrl = encodeURIComponent('https://maleauthor.oscorp.net/');
 const tweet = `https://twitter.com/intent/tweet?text=${encSentence}&url=${encUrl}`;
 const share = `https://www.facebook.com/sharer/sharer.php?quote=${encSentence}&u=${encUrl}&display=popup`;
 
-document.getElementById('quote').innerHTML = sentence;
+document.getElementById('quote').innerHTML = widont(sentence);
 document.getElementById('twitter').setAttribute('href', tweet);
 document.getElementById('facebook').setAttribute('href', share);
