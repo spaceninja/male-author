@@ -10,7 +10,7 @@ const verb = sample(vocabulary.verb);
 const sentence = `She had ${bodyPart} like a ${adjective} ${simile} and I ${intransitive} to ${verb} her.`;
 
 const encSentence = encodeURIComponent(`${sentence} #MaleAuthorDescription`);
-const encUrl = encodeURIComponent('http://talklikewarrenellis.com');
+const encUrl = encodeURIComponent('https://maleauthor.oscorp.net/');
 
 const tweet = `https://twitter.com/intent/tweet?text=${encSentence}&url=${encUrl}`;
 const share = `https://www.facebook.com/sharer/sharer.php?quote=${encSentence}&u=${encUrl}&display=popup`;
