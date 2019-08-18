@@ -1,19 +1,26 @@
 import vocabulary from '../data/vocabulary.json';
-
 import sample from 'lodash.sample';
-import random from 'lodash.random';
+// import random from 'lodash.random';
 
-// eslint-disable-next-line no-console
-console.log('RANDOM', random(0, 5));
+/* eslint-disable no-console */
 
-// eslint-disable-next-line no-console
-console.log('SAMPLE', sample([1, 2, 3, 4]));
+// console.log('RANDOM', random(0, 5));
 
-// eslint-disable-next-line no-console
-console.log('Hello Project.');
+const bodyPart = sample(vocabulary.bodyPart);
+const adjective = sample(vocabulary.adjective);
+const simile = sample(vocabulary.simile);
+const intransitive = sample(vocabulary.intransitive);
+const verb = sample(vocabulary.verb);
 
-// eslint-disable-next-line no-console
-console.log(process.env.NODE_ENV);
+const sentence = `She had ${bodyPart} like a ${adjective} ${simile} and I ${intransitive} to ${verb} her.`;
+console.log(sentence);
 
-// eslint-disable-next-line no-console
-console.log(vocabulary);
+const encSentence = encodeURIComponent(sentence);
+const encUrl = encodeURIComponent('http://talklikewarrenellis.com');
+
+const tweet = `https://twitter.com/intent/tweet?text=${encSentence}&url=${encUrl}`;
+const share = `https://www.facebook.com/sharer/sharer.php?quote=${encSentence}&u=${encUrl}&display=popup`;
+
+document.getElementById('quote').innerHTML = sentence;
+document.getElementById('twitter').setAttribute('href', tweet);
+document.getElementById('facebook').setAttribute('href', share);
