@@ -18,4 +18,4 @@ deploy:
   local_dir: dist
   keep_history: true
   on:
-    branch: master
+    branch: main
