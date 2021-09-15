@@ -1,67 +1,81 @@
 {
   "name": "male-author-description-generator",
-  "version": "1.0.0",
-  "description": "Don’t waste time trying to figure out how to write about your boobs, let this generator do it for you.",
-  "main": "index.js",
-  "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --config build-utils/webpack.config.js --env.env=development",
-    "build": "NODE_ENV=production webpack --config build-utils/webpack.config.js --env.env=production && cp ./src/CNAME dist/",
-    "lint": "npm run lint:js && npm run lint:css",
-    "lint:js": "eslint '**/*.js'",
-    "lint:css": "stylelint '**/*.scss'",
-    "fix": "npm run fix:js && npm run fix:css",
-    "fix:js": "eslint --fix '**/*.js'",
-    "fix:css": "stylelint --fix '**/*.scss'",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/spaceninja/male-author.git"
-  },
-  "keywords": [],
-  "author": "Scott Vandehey",
+  "version": "0.0.0",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/spaceninja/male-author/issues"
-  },
-  "homepage": "https://github.com/spaceninja/male-author#readme",
-  "devDependencies": {
-    "@babel/core": "7.15.5",
-    "@babel/preset-env": "7.15.6",
-    "autoprefixer": "9.8.6",
-    "babel-eslint": "10.1.0",
-    "babel-loader": "8.2.2",
-    "clean-webpack-plugin": "3.0.0",
-    "css-loader": "3.6.0",
-    "cssnano": "4.1.11",
-    "dotenv-webpack": "1.8.0",
-    "eslint": "6.8.0",
-    "eslint-config-airbnb-base": "14.2.1",
-    "eslint-config-prettier": "6.15.0",
-    "eslint-loader": "2.2.1",
-    "eslint-plugin-import": "2.24.2",
-    "eslint-plugin-jest": "22.21.0",
-    "eslint-plugin-prettier": "3.4.1",
-    "file-loader": "4.3.0",
-    "html-webpack-plugin": "3.2.0",
-    "jest": "24.9.0",
-    "mini-css-extract-plugin": "0.12.0",
-    "postcss-loader": "3.0.0",
-    "prettier": "1.19.1",
-    "sass": "1.40.1",
-    "sass-loader": "7.3.1",
-    "stylelint": "10.1.0",
-    "stylelint-config-spaceninja": "github:spaceninja/stylelint-config-spaceninja",
-    "stylelint-webpack-plugin": "0.10.5",
-    "webpack": "4.46.0",
-    "webpack-bundle-analyzer": "3.9.0",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3.11.2",
-    "webpack-merge": "4.2.2",
-    "webpack-visualizer-plugin": "0.1.11"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "run-s lint:js lint:css lint:prettier",
+    "lint:check": "run-s lint:*:check",
+    "lint:js": "eslint --fix .",
+    "lint:js:check": "eslint .",
+    "lint:css": "stylelint --fix '**/*.scss'",
+    "lint:css:check": "stylelint '**/*.scss'",
+    "lint:prettier": "prettier --write . '!dist/**/*'",
+    "lint:prettier:check": "prettier --check . '!dist/**/*'"
   },
   "dependencies": {
-    "lodash.sample": "^4.2.1",
-    "widont": "^0.3.3"
+    "lodash.sample": "4.2.1",
+    "widont": "0.3.3"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.24.2",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.4.0",
+    "sass": "^1.41.0",
+    "stylelint": "13.13.1",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-spaceninja": "7.0.0",
+    "vite": "2.5.7"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "ignorePatterns": [
+      "dist/**/*",
+      "**/*.html"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-spaceninja",
+      "stylelint-config-prettier"
+    ],
+    "ignoreFiles": [
+      "dist/**/*"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": [
+          "*.html"
+        ],
+        "options": {
+          "parser": "html"
+        }
+      }
+    ]
+  },
+  "renovate": {
+    "extends": [
+      "config:base",
+      ":automergeMinor"
+    ],
+    "dependencyDashboard": true
   }
 }

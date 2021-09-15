@@ -1,4 +1,5 @@
-import vocabulary from '../data/vocabulary.json';
+import './style.scss';
+import vocabulary from './vocabulary.json';
 import sample from 'lodash.sample';
 import widont from 'widont';
 

@@ -23,6 +23,6 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci
       - name: Run linter 👀
-        run: npm run lint
+        run: npm run lint:check
       - name: Run build 🔨
         run: npm run build
