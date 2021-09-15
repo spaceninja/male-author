@@ -1,7 +1,7 @@
 import './style.scss';
-import vocabulary from './vocabulary.json';
 import sample from 'lodash.sample';
 import widont from 'widont';
+import vocabulary from './vocabulary.json';
 
 const bodyPart = sample(vocabulary.bodyPart);
 const adjective = sample(vocabulary.adjective);

@@ -34,14 +34,15 @@
   },
   "eslintConfig": {
     "env": {
-      "browser": true
+      "browser": true,
+      "es2021": true
     },
     "parserOptions": {
-      "ecmaVersion": "latest",
+      "ecmaVersion": 12,
       "sourceType": "module"
     },
     "extends": [
-      "eslint:recommended",
+      "airbnb-base",
       "prettier"
     ],
     "ignorePatterns": [
