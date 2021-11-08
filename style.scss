@@ -15,7 +15,6 @@ body {
 
 a {
   color: darkslategray;
-  transition: color 0.2s;
 
   &:hover,
   &:focus {
@@ -64,7 +63,7 @@ p {
   }
 
   .btn__icon {
-    background: rgba(0, 0, 0, 0) 0 0 no-repeat;
+    background: rgb(0 0 0 / 0%) 0 0 no-repeat;
     display: inline-block;
     height: 1.33em;
     position: relative;
