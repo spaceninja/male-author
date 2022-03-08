@@ -30,7 +30,7 @@
     "stylelint": "14.5.3",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-spaceninja": "9.0.1",
-    "vite": "2.7.13"
+    "vite": "2.8.6"
   },
   "eslintConfig": {
     "env": {
