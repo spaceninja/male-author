@@ -29,7 +29,7 @@
     "sass": "1.49.9",
     "stylelint": "14.5.3",
     "stylelint-config-prettier": "9.0.3",
-    "stylelint-config-spaceninja": "9.0.1",
+    "stylelint-config-spaceninja": "10.0.0",
     "vite": "2.8.6"
   },
   "eslintConfig": {
