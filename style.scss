@@ -8,7 +8,7 @@ body {
   color: darkslategray;
   padding: 1em;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (width >= 480px) {
     padding: 3em;
   }
 }
@@ -28,7 +28,7 @@ h1 {
   font-weight: 200;
   text-indent: -0.375em;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (width >= 480px) {
     font-size: 4em;
   }
 }
