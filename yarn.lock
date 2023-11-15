@@ -2912,10 +2912,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-widont@0.3.4:
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/widont/-/widont-0.3.4.tgz#b79090d2e376e1c144e3b2cb759318feb8fe25f4"
-  integrity sha512-X4/KhsPmilZbHaqsApmOM7i+Sr/lKDwvRjX0wSAh8gUfv1Au2IFIXQQ/LMbP4X+cQR01lxvEF6FXS0Je0i4FyA==
+widont@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/widont/-/widont-0.4.0.tgz#12efe22c12386fbe5a49da74528bb8bb8f7b9946"
+  integrity sha512-2lSOfQ32Q9dmW9W/7vdPygAWyBATZ8xGFPplPKDb1FPySs4W0V1b0T07oCeQcwID+d5W5dHgePkiLsfhg1S52w==
 
 wrappy@1:
   version "1.0.2"
