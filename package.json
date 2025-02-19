@@ -29,7 +29,7 @@
     "sass": "1.85.0",
     "stylelint": "16.14.1",
     "stylelint-config-spaceninja": "15.0.0",
-    "vite": "6.1.0"
+    "vite": "6.1.1"
   },
   "eslintConfig": {
     "env": {
