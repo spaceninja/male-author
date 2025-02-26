@@ -7,6 +7,8 @@ export default [
   eslintConfigPrettier,
   {
     ignores: ['dist/**/*', '**/*.html'],
+  },
+  {
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
