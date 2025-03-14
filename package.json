@@ -27,7 +27,7 @@
     "sass": "1.85.1",
     "stylelint": "16.15.0",
     "stylelint-config-spaceninja": "15.0.0",
-    "vite": "6.2.1"
+    "vite": "6.2.2"
   },
   "stylelint": {
     "extends": [
