@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "eslint": "9.31.0",
-    "eslint-config-prettier": "10.1.5",
+    "eslint-config-prettier": "10.1.8",
     "npm-run-all2": "8.0.4",
     "prettier": "3.6.2",
     "sass": "1.89.2",
