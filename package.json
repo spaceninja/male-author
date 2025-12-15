@@ -20,7 +20,7 @@
     "widont": "0.4.0"
   },
   "devDependencies": {
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "npm-run-all2": "8.0.4",
     "prettier": "3.7.4",
