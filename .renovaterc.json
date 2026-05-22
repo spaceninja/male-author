@@ -1,5 +1,0 @@
-{
-  "extends": ["config:recommended", ":automergeMinor", ":pinVersions"],
-  "minimumReleaseAge": "3 days",
-  "commitMessageSuffix": "[skip netlify]"
-}
